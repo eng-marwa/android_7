@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginBottom="5dp"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="20dp"
+    android:clipToPadding="true"
+    app:cardElevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivFood"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/food"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/topRoundedImageView" />
+
+        <TextView
+            android:id="@+id/lbOpenClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/white_corner_bg"
+            android:fontFamily="@font/josefinsans_bold"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp"
+            android:text="@string/open"
+            android:textAllCaps="true"
+            android:textColor="@color/green"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/white_corner_bg"
+            android:drawableStart="@drawable/star"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/josefinsans_bold"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp"
+            android:text="4.5"
+            android:textAllCaps="true"
+            android:textColor="@color/naviy"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbRestaurantsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/josefinsans_bold"
+            android:text="@string/happy_bones"
+            android:textColor="@color/naviy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFood" />
+
+        <TextView
+            android:id="@+id/lbAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/josefinsans_regular"
+            android:text="@string/happy_bones"
+            android:textColor="@color/blueGrey"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbRestaurantsName" />
+
+        <TextView
+            android:id="@+id/lbRestaurantCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.7"
+            android:background="@drawable/text_gradient_1"
+            android:fontFamily="@font/josefinsans_regular"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/lbRestaurantsName"
+            app:layout_constraintTop_toBottomOf="@+id/ivFood"
+            tools:text="Italin" />
+
+        <TextView
+            android:id="@+id/lbDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_gradient_1"
+            android:backgroundTint="@color/lightPurple"
+            android:fontFamily="@font/josefinsans_regular"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/lbRestaurantCategory"
+            app:layout_constraintTop_toBottomOf="@+id/ivFood"
+            tools:text="1.2km" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFood">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFriend1"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="63dp"
+                android:src="@drawable/category_bg3"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:strokeColor="@color/white"
+                android:alpha="0.7"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="76dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/josefinsans_semibold"
+                android:text="+2"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFriend2"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/category_bg3"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFriend3"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/category_bgg"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFriend4"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:src="@drawable/category_bg2"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="roundedImageView">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="topRoundedImageView">
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+    </style>
+
+    <style name="circleImageView">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

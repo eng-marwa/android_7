@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android7_1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_restaurants">Find Restaurants\n</string>
+    <string name="see_all">See All</string>
+    <string name="trending_restaurants">Trending Restaurants</string>
+    <string name="category">Category</string>
+    <string name="italin">Italian</string>
+    <string name="freinds">Friends</string>
+    <string name="open">Open</string>
+    <string name="happy_bones">Happy Bones</string>
+</resources>
